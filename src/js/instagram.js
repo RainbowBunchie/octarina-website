@@ -16,7 +16,7 @@ function test(data) {
         if (image.length > 0) {
             images.push(image[0]);
         }
-        if (images.length > 4) {
+        if (images.length > 5) {
             generateFeed(images);
             return;
         }
