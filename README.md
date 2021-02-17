@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/969ee502-79ea-4273-9e32-1f851b19bd93/deploy-status)](https://app.netlify.com/sites/octarina/deploys)
+
 # Octarina Website
 todo: add description
 
@@ -26,8 +28,6 @@ $ npm run dev
 ```sh
 $ npm run production
 ```
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/969ee502-79ea-4273-9e32-1f851b19bd93/deploy-status)](https://app.netlify.com/sites/octarina/deploys)
 
 ## Run Code Style Linters
 
