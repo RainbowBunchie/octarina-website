@@ -1,0 +1,24 @@
+.about {
+    background-color: $pink;
+}
+
+.about {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.about__headline {
+    width: 100%;
+    font-size: $headline-size;
+    text-align: center;
+    color: $white;
+}
+
+.about__img {
+    width: 50%;
+}
+
+.about__text {
+    width: 50%;
+}

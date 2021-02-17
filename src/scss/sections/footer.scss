@@ -1,0 +1,19 @@
+.footer {
+    background-color: $pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6em;
+}
+
+.footer__link {
+    font-family: $headline-font;
+    font-size: 2em;
+    padding: 0.5em;
+    color: $white;
+}
+
+.footer__link:active, 
+.footer__link:focus {
+    color: $white;
+}

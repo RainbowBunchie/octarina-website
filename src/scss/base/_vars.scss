@@ -9,11 +9,18 @@
 /* Colour palette */
 $black: #000;
 $white: #fff;
+$pink: #F4ABB7;
+$blue: #74CADF;
 
-$body-background-color: #333;
-$foreground-color: #fff;
 $caption-color: #464646;
 $accent-color: #999;
 $link-color: #ec1f4e;
+
+$headline-font: 'Amatic SC', Arial;
+$text-font: 'Raleway', Arial;
+$headline-size: 2em;
+
+$breakpoint-tablet: 481px;
+$breakpoint-web: 800px;
 
 /* Components */

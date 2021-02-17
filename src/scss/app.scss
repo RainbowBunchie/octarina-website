@@ -3,6 +3,8 @@
 /* Core variables */
 @import 'base/vars';
 
+@import 'base/globals';
+
 /* CSS Reset */
 @import 'base/reset';
 
@@ -23,4 +25,25 @@
 @import 'dirty/hacks';
 
 /* Demo Page styles */
-@import 'demo';
+@import 'section';
+
+@import 'sections/header.scss';
+
+@import 'sections/trailer.scss';
+
+@import 'sections/about.scss';
+
+@import 'sections/download.scss';
+
+@import 'sections/social-media.scss';
+
+@import 'sections/news.scss';
+
+@import 'sections/team.scss';
+
+@import 'sections/footer.scss';
+
+
+
+
+
