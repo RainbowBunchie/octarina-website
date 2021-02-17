@@ -11,8 +11,12 @@
     <main>
       <section class="section section--trailer section--fullscreen trailer">
         <div class="wrapper">
-          <img src="" />
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/w9DKBKqvu4g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div> 
+            <a class="trailer__player" href="https://www.youtube.com/watch/w9DKBKqvu4g" target="_blank">
+              <img src="../images/content/youtube-placeholder.png" alt="image showing the youtube thumbnail containing an octopus"/>
+            </a> 
+            <!-- <iframe id="iframe" class="trailer__player" width="560" height="315" src="https://www.youtube.com/embed/w9DKBKqvu4g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          </div>
         </div>
       </section>
       <section class="section section--about section--fullscreen about">
@@ -36,16 +40,17 @@
         </div>
       </section>
       <section class="section section--download download">
-        Download
+        <h1 class="download__headline headline">download</h1>
       </section>
       <section class="section section--news news">
-        Newsfeed
+        <h1 class="news__headline headline">News</h1>
+        <div id="twitter-feed"></div>
       </section>
       <section class="section section--social-media social-media">
-        Social Media
+        <h1 class="social__headline headline">social media</h1>
       </section>
       <section class="section section--team section--fullscreen team">
-        Team
+        <h1 class="team__headline headline">Team</h1>
       </section>
     </main>
     <footer class="footer">

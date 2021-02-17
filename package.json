@@ -90,5 +90,8 @@
     "commitizen": {
       "path": "git-cz"
     }
+  },
+  "dependencies": {
+    "twitter-fetcher": "^18.0.4"
   }
 }

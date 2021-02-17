@@ -1,0 +1,16 @@
+.news {
+    background-color: $pink;
+}
+
+#twitter-feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.media {
+    img {
+        width: auto;
+    }
+}

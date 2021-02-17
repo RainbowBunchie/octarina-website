@@ -5,5 +5,9 @@
 .headline {
     font-family: $headline-font;
     font-size: $headline-size;
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+    color: $white;
 }
 

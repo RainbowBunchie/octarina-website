@@ -6,6 +6,7 @@
     .wrapper {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 .about__headline {
@@ -16,9 +17,12 @@
 }
 
 .about__img {
-    width: 50%;
+    width: 49%;
 }
 
 .about__text {
-    width: 50%;
+    font-family: $text-font;
+    color: $white;
+    line-height: 130%;
+    width: 49%;
 }
