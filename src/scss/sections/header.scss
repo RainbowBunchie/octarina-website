@@ -2,6 +2,8 @@
 .header {
   padding: 0;
   position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 .header__image {
     object-fit: cover;
