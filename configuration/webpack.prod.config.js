@@ -20,28 +20,28 @@ module.exports = merge(webpackConfiguration, {
                 parallel: true,
             }),
             new CssMinimizerPlugin(),
-            new ImageMinimizerPlugin({
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                minimizerOptions: {
-                    // Lossless optimization with custom option
-                    // Feel free to experiment with options for better result for you
-                    plugins: [
-                        ['gifsicle', { interlaced: true }],
-                        ['jpegtran', { progressive: true }],
-                        ['optipng', { optimizationLevel: 5 }],
-                        [
-                            'svgo',
-                            {
-                                plugins: [
-                                    {
-                                        removeViewBox: false,
-                                    },
-                                ],
-                            },
-                        ],
-                    ],
-                },
-            }),
+            // new ImageMinimizerPlugin({
+            //     test: /\.(jpe?g|png|gif|svg)$/i,
+            //     minimizerOptions: {
+            //         // Lossless optimization with custom option
+            //         // Feel free to experiment with options for better result for you
+            //         plugins: [
+            //             ['gifsicle', { interlaced: true }],
+            //             ['jpegtran', { progressive: true }],
+            //             ['optipng', { optimizationLevel: 5 }],
+            //             [
+            //                 'svgo',
+            //                 {
+            //                     plugins: [
+            //                         {
+            //                             removeViewBox: false,
+            //                         },
+            //                     ],
+            //                 },
+            //             ],
+            //         ],
+            //     },
+            // }),
         ],
     },
 
