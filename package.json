@@ -43,6 +43,7 @@
     "git-cz": "^4.7.6",
     "html-webpack-plugin": "^5.0.1",
     "image-minimizer-webpack-plugin": "^2.2.0",
+    "image-webpack-loader": "^7.0.1",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-optipng": "^8.0.0",
