@@ -17,3 +17,7 @@
 .footer__link:focus {
     color: $white;
 }
+
+.footer__link:hover {
+    text-decoration: underline;
+} 

@@ -7,6 +7,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: flex-start;
     }
 }
 .about__headline {
@@ -17,12 +18,43 @@
 }
 
 .about__img {
-    width: 49%;
-}
+    @media only screen and (min-width: $breakpoint-web) {
+        width: 44%;
+        height: auto;
+        margin-bottom: 4em;
+        object-fit: contain;
+    }
+    width: 100%;
+    margin-bottom: 2em;
+} 
 
 .about__text {
+    @media only screen and (min-width: $breakpoint-web) {
+        width: 54%;
+    }
     font-family: $text-font;
     color: $white;
-    line-height: 130%;
-    width: 49%;
+    line-height: 150%;
+    width: 100%;
+    margin-bottom: 2em;
+}
+@media only screen and (max-width: $breakpoint-web) {
+    .about__img--1 {
+        order: 1;
+    }
+    .about__text--1 {
+        order: 2;
+    }
+    .about__img--2 {
+        order: 3;
+    }   
+    .about__text--2 {
+        order: 4;
+    } 
+    .about__img--3 {
+        order: 4;
+    }
+    .about__text--3 {
+        order: 5;
+    }
 }
