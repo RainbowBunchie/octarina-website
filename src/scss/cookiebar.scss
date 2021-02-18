@@ -1,20 +1,17 @@
-#cookie-bar{
-    background: $blue !important;
-    padding: 2.5em !important;
-    box-shadow: 2px 5px 40px 0px #0B325E !important;
+#cookie-bar {
+        background: $blue !important;
+        padding: 2.5em !important;
+        box-shadow: 2px 5px 40px 0px #0B325E !important;
+
     p {
         font-family: $text-font;
-        //color: $pink !important;
         font-size: 1.25em;
     }
+
     a {
         border-bottom: none !important;
         border-radius: 0 !important;
         text-shadow: none !important;
-        padding: 0.8em !important;
-        
-        &#cookie-bar-button {
-            //background-color: $blue !important;
-        }
+        padding: .8em !important;
     }
 }

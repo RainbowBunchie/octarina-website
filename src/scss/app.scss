@@ -1,7 +1,7 @@
+/* By Athlon Front-End Team */
+
 /* Core variables */
 @import 'base/vars';
-
-@import 'base/globals';
 
 /* CSS Reset */
 @import 'base/reset';
@@ -11,6 +11,9 @@
 
 /* Fonts */
 @import 'base/fonts';
+
+@import 'base/globals';
+
 
 /* Mixins, helpers and functions */
 @import 'base/mixins';
@@ -22,29 +25,22 @@
 /* Browser specific styles */
 @import 'dirty/hacks';
 
-/* Demo Page styles */
 @import 'section';
 
-@import 'sections/header.scss';
+@import 'sections/header';
 
-@import 'sections/trailer.scss';
+@import 'sections/trailer';
 
-@import 'sections/about.scss';
+@import 'sections/about';
 
-@import 'sections/download.scss';
+@import 'sections/download';
 
-@import 'sections/social-media.scss';
+@import 'sections/social-media';
 
-@import 'sections/news.scss';
+@import 'sections/news';
 
-@import 'sections/team.scss';
+@import 'sections/team';
 
-@import 'sections/footer.scss';
+@import 'sections/footer';
 
-@import 'cookiebar.scss';
-
-
-
-
-
-
+@import 'cookiebar';
