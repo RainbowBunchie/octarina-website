@@ -3,7 +3,14 @@ const twitterFetcher = require('twitter-fetcher');
 function generateFeed(data) {
     const wrapper = document.getElementById('twitter-feed');
     for (const post of data) {
-        wrapper.appendChild(post);
+        console.log(post)
+        const a = document.createElement('a');
+        a.appendChild(post);
+        a.title = 'Link to Twitter';
+        a.target = '_blank';
+        a.classList.add('news__anchor');
+        a.href = 'https://twitter.com/octarina_game';
+        wrapper.appendChild(a);
     }
 }
 
