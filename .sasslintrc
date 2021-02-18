@@ -62,7 +62,9 @@ rules:
   force-pseudo-nesting: 0
 
   # Name Formats
-  class-name-format: 2
+  class-name-format:
+    - 1
+    - convention: hyphenatedbem
   function-name-format: 2
   id-name-format: 2
   mixin-name-format: 2
@@ -82,7 +84,7 @@ rules:
   empty-args: 0
   hex-length: 2
   hex-notation: 2
-  indentation: 2
+  indentation: 4
   leading-zero: 2
   nesting-depth: 0
   property-sort-order: 0

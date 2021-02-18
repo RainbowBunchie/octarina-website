@@ -1,0 +1,24 @@
+.nav {
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6em;
+    z-index: 5;
+}
+
+.nav__link {
+    font-family: $headline-font;
+    font-size: 2em;
+    padding: .5em;
+    color: $white;
+}
+
+.nav__link:active,
+.nav__link:focus {
+    color: $white;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}

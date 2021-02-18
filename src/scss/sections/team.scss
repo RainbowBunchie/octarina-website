@@ -2,20 +2,27 @@
     background-color: $pink;
     .wrapper {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        flex-direction: column;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        @media only screen and (min-width: $breakpoint-web) {
+            flex-direction: row;
+        }
     }
 }
 
 .team__headline {
-    width: 100%;
+    @media only screen and (min-width: $breakpoint-web) {
+        width: 100%;
+    }
 }
 
 .member {
-    width: 50%;
+    @media only screen and (min-width: $breakpoint-web) {
+        width: 50%;
+    }
+    width: auto;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     font-family: $text-font;
     color: $white;
