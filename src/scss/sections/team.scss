@@ -1,3 +1,43 @@
 .team {
     background-color: $pink;
+    .wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.team__headline {
+    width: 100%;
+}
+
+.member {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: $text-font;
+    color: $white;
+    b {
+        font-weight: 600;
+    }
+    padding: 1em 0;
+}
+
+.member__link {
+    text-decoration: underline;
+    color: $white;
+    &:active,
+    &:focus {
+        color: $white;
+
+    }
+}
+
+.member__img {
+    margin-right: 1em;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
 }
