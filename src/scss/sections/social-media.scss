@@ -1,3 +1,29 @@
 .social-media {
     background-color: $blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media__headline {
+    width: 100%;
+}
+
+.social-media__button {
+    background-color: $white;
+    color: $blue;
+    border-radius: 0.5em;
+    margin: 0.5em 1em;
+    display: flex;
+    padding: 0.5em 1em;
+    font-size: 1.8em;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.social-media__icon {
+    width: 30px;
+    margin-right: 0.5em;
 }
