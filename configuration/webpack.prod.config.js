@@ -7,21 +7,43 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const webpackConfiguration = require('../webpack.config');
 
 module.exports = merge(webpackConfiguration, {
-  mode: 'production',
+    mode: 'production',
 
-  /* Manage source maps generation process. Refer to https://webpack.js.org/configuration/devtool/#production */
-  devtool: false,
+    /* Manage source maps generation process. Refer to https://webpack.js.org/configuration/devtool/#production */
+    devtool: false,
 
-  /* Optimization configuration */
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new TerserPlugin({
-        parallel: true,
-      }),
-      new CssMinimizerPlugin(),
-    ],
-  },
+    /* Optimization configuration */
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new TerserPlugin({
+                parallel: true,
+            }),
+            new CssMinimizerPlugin(),
+            new ImageMinimizerPlugin({
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                minimizerOptions: {
+                    // Lossless optimization with custom option
+                    // Feel free to experiment with options for better result for you
+                    plugins: [
+                        ['gifsicle', { interlaced: true }],
+                        ['jpegtran', { progressive: true }],
+                        ['optipng', { optimizationLevel: 5 }],
+                        [
+                            'svgo',
+                            {
+                                plugins: [
+                                    {
+                                        removeViewBox: false,
+                                    },
+                                ],
+                            },
+                        ],
+                    ],
+                },
+            }),
+        ],
+    },
 
   /* Performance treshold configuration values */
   performance: {
@@ -30,28 +52,5 @@ module.exports = merge(webpackConfiguration, {
   },
 
   /* Additional plugins configuration */
-  plugins: [
-    new ImageMinimizerPlugin({
-      test: /\.(jpe?g|png|gif|svg)$/i,
-      minimizerOptions: {
-        // Lossless optimization with custom option
-        // Feel free to experiment with options for better result for you
-        plugins: [
-          ['gifsicle', { interlaced: true }],
-          ['jpegtran', { progressive: true }],
-          ['optipng', { optimizationLevel: 5 }],
-          [
-            'svgo',
-            {
-              plugins: [
-                {
-                  removeViewBox: false,
-                },
-              ],
-            },
-          ],
-        ],
-      },
-    }),
-  ],
+  plugins: [],
 });
