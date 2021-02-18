@@ -1,9 +1,23 @@
 
 .header {
   padding: 0;
+  position: relative;
 }
 .header__image {
     object-fit: cover;
     min-height: 100vh;
     min-width: 100vw;
+  }
+
+  .header__logo {
+    @media only screen and (min-width: $breakpoint-web) {
+      max-width: 650px;
+    }
+    position: absolute;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
   }
