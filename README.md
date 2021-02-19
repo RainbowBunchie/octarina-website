@@ -5,7 +5,7 @@
 
 ## Description
 
-This project contains the code for the Octarina's Webiste (https://octarina.netlify.app/). Octarina is a physics-based 3D puzzle platformer featuring a trapped little octopus who must find a way out and escape out of a sushi factory site. You play as an adorable little octopus, which is trapped inside an aquarium for its whole life. Not as a pet, but rather as a sushi ingredient. Escape your captivity and find a way out before it's too late! Use the sticky abilities of Octarina to jump, climb and cause mayhem in the factory. 
+This project contains the code for Octarina's Webiste (https://octarina.netlify.app/). Octarina is a physics-based 3D puzzle platformer featuring a trapped little octopus who must find a way out and escape out of a sushi factory site. You play as an adorable little octopus, which is trapped inside an aquarium for its whole life. Not as a pet, but rather as a sushi ingredient. Escape your captivity and find a way out before it's too late! Use the sticky abilities of Octarina to jump, climb and cause mayhem in the factory. 
 
 Below you can find the description of the most important commands.
 
