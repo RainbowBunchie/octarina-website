@@ -1,0 +1,41 @@
+.imprint,
+.dsgvo {
+    font-family: $text-font;
+    padding: 5em 0;
+    background-color: $pink;
+    color: $white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: $headline-font;
+        font-size: 3em;
+        padding-top: 1em;
+    }
+
+    h2 {
+        font-family: $headline-font;
+        font-size: 2em;
+        padding: .5em 0;
+    }
+
+    p {
+        padding: .5em 0;
+    }
+    ul {
+        list-style-type: initial;
+    }
+    h3 {
+        font-family: $headline-font;
+        font-size: 1.5em;
+        padding: .5em 0;
+    }
+    a,
+    a:hover,
+    {
+        color: $white;
+        text-decoration: underline;
+    }
+}
