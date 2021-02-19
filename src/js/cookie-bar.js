@@ -1,6 +1,7 @@
 const cookieValue = document.cookie.match(/(;)?cookiebar=([^;]*);?/) ? document.cookie.match(/(;)?cookiebar=([^;]*);?/)[2] : 'CokkiesUnset';
 
 if (cookieValue === 'CookieAllowed') {
+    console.log('test')
     const thumbnail = document.getElementsByClassName('trailer__thumbnail')[0];
     const playerContainer = document.getElementsByClassName('trailer__container')[0];
     const wrapper = document.getElementsByClassName('trailer')[0].getElementsByClassName('wrapper')[0].getBoundingClientRect();
