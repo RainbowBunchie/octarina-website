@@ -1,0 +1,13 @@
+.steam {
+    display: flex;
+    flex-direction: column;
+    background-color: $pink;
+}
+
+.steam__iframe {
+    margin: 0 auto;
+    width: 100%;
+    @media only screen and (min-width: $breakpoint-web) {
+        width: auto;
+    }
+}
