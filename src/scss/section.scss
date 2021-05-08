@@ -8,7 +8,7 @@
 .section--fullscreen {
   @media only screen and (min-width: $breakpoint-tablet) {
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
   }
 }
 
