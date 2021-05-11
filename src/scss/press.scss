@@ -5,12 +5,12 @@
 
     .wrapper {
         display: flex;
+        flex-wrap: wrap;
     }
 }
 
 .press__facts {
     width: 30%;
-    // background-color: $blue;
     padding-top: 4em;
 }
 
@@ -67,4 +67,37 @@
     text-align: left;
     color: #fff;
     font-family: $headline-font;
+}
+
+.press__media {
+    width: 100%;
+}
+
+.media {
+    margin-top: 3em;
+}
+
+.media__headline {
+    width: 100%;
+    font-size: 3.5em;
+    text-align: center;
+    color: #fff;
+    font-family: $headline-font;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+.media--image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 2em;
+    .media__wrapper {
+        width: 49%;
+        height: auto;
+        padding-bottom: 2em;
+    }
+    .media__caption {
+        font-family: $text-font;
+    }
 }
