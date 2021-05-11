@@ -21,6 +21,7 @@
     text-align: left;
     color: #fff;
     font-family: $headline-font;
+    font-weight: 700;
 }
 
 .facts__text {
@@ -45,6 +46,7 @@
     text-align: left;
     color: #fff;
     font-family: $headline-font;
+    font-weight: 700;
 }
 
 .main-text__subheadline {
@@ -54,10 +56,12 @@
     text-align: left;
     color: #fff;
     font-family: $headline-font;
+    font-weight: 700;
 }
 
 .main-text__subline {
     margin: .8em 0 .3em;
+    font-weight: 700;
     width: 100%;
     font-size: 3.5em;
     text-align: left;
