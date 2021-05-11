@@ -3,14 +3,14 @@
 }
 
 #twitter-feed {
-  @media only screen and (min-width: $breakpoint-web) {
-    display: flex;
-    align-items: flex-start;
-    padding: 0;
-    flex: 1 1 0px;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  flex: 1 1 0px;
+  overflow: scroll;
+  @media only screen and (min-width: $breakpoint-tablet) {
     padding: 0 2em;
   }
-  overflow: scroll;
 }
 
 .media {
@@ -23,14 +23,18 @@
 }
 
 .post {
-  width: 370px;
-  min-width: 370px;
+  width: 70%;
+  min-width: 70%;
   padding: 1.5em;
   background-color: $white;
   font-family: $text-font;
   border-radius: 15px;
   margin: 0 1em;
-  flex: 1 1 0px
+  flex: 1 1 0px;
+  @media only screen and (min-width: $breakpoint-tablet) {
+    width: 370px;
+    min-width: 370px;
+  }
 }
 
 .post__date {
@@ -55,10 +59,27 @@
 
 .user__name {
   font-weight: 500;
+  color: $black;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $black;
+  }
 }
 
 .post__text {
   margin-bottom: 1em;
+  word-wrap: break-word;
+  a {
+    color: $blue;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      color: $blue;
+    }
+  }
 }
 
 .interaction {

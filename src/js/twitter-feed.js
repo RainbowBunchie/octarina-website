@@ -6,6 +6,10 @@ function generateFeed(data) {
 
     for (const post of data) {
         const doc = new DOMParser().parseFromString(post, 'text/html');
+        const userLink = doc.body.querySelector('.user a').href;
+        const userName = doc.body.querySelector('.user a').getAttribute('aria-label');
+        const screenName = userName.split('(')[0];
+        const twitterName = userName.split(':')[1].replace(' ', '').replace(')', '');
         let time = doc.body.getElementsByClassName('timePosted')[0].textContent;
         time = time.replace('Posted on ', '');
         const text = doc.body.getElementsByClassName('tweet')[0].innerHTML;
@@ -23,10 +27,10 @@ function generateFeed(data) {
         const content = `
         <div class="news__post post">
             <p class="post__date">${time}</p> 
-            <div class="post__user user">
-                <img class="user__img" src="../images/content/member-denise.png">
-                <p class="user__name">Octarina WISHLIST NOW! @octarina_game</p>
-            </div>
+            <a href="${userLink}" target="_blank" class="post__user user">
+                <img class="user__img" src="../images/content/twitter-user.png">
+                <p class="user__name">${screenName} @${twitterName}</p>
+            </a>
             <p class="post__text">${text}</p>
             ${images}
             <div class="post__interaction interaction">
