@@ -1,0 +1,66 @@
+.press {
+    background-color: $pink;
+    color: $white;
+    min-height: 100vh;
+
+    .wrapper {
+        display: flex;
+    }
+}
+
+.press__facts {
+    width: 30%;
+    // background-color: $blue;
+    padding-top: 4em;
+}
+
+.facts__subline {
+    margin: .8em 0 .3em;
+    width: 100%;
+    font-size: 2em;
+    text-align: left;
+    color: #fff;
+    font-family: $headline-font;
+}
+
+.facts__text {
+    font-family: $text-font;
+    line-height: 150%;
+    word-wrap: break-word;
+}
+
+.press__main-text {
+    padding: 4em 1em 0;
+    width: 70%;
+}
+
+.main-text__text {
+    font-family: $text-font;
+    line-height: 150%;
+}
+
+.main-text__headline {
+    width: 100%;
+    font-size: 5.5em;
+    text-align: left;
+    color: #fff;
+    font-family: $headline-font;
+}
+
+.main-text__subheadline {
+    margin-bottom: .5em;
+    width: 100%;
+    font-size: 1.8em;
+    text-align: left;
+    color: #fff;
+    font-family: $headline-font;
+}
+
+.main-text__subline {
+    margin: .8em 0 .3em;
+    width: 100%;
+    font-size: 3.5em;
+    text-align: left;
+    color: #fff;
+    font-family: $headline-font;
+}
