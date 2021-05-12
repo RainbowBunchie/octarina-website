@@ -19,6 +19,15 @@
     padding-top: 4em;
 }
 
+.facts__headline {
+    width: 100%;
+    font-size: 5em;
+    text-align: left;
+    color: #fff;
+    font-family: $headline-font;
+    font-weight: 700;
+}
+
 .facts__subline {
     margin: .8em 0 .3em;
     width: 100%;
@@ -112,6 +121,9 @@
         width: 49%;
         height: auto;
         padding-bottom: 2em;
+    }
+    img {
+        height: auto;
     }
 }
 
