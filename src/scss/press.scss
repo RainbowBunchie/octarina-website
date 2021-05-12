@@ -4,13 +4,18 @@
     min-height: 100vh;
 
     .wrapper {
-        display: flex;
-        flex-wrap: wrap;
+        @media only screen and (min-width: $breakpoint-web) {
+            flex-wrap: wrap;
+            display: flex;
+        }
+        padding-bottom: 4em;
     }
 }
 
 .press__facts {
-    width: 30%;
+    @media only screen and (min-width: $breakpoint-web) {
+        width: 30%;
+    }
     padding-top: 4em;
 }
 
@@ -28,11 +33,22 @@
     font-family: $text-font;
     line-height: 150%;
     word-wrap: break-word;
+    a {
+        color: $white;
+        text-decoration: underline;
+        &:hover,
+        &:active,
+        &:visited {
+            color: $white;
+        }
+    }
 }
 
 .press__main-text {
-    padding: 4em 1em 0;
-    width: 70%;
+    @media only screen and (min-width: $breakpoint-web) {
+        width: 70%;
+        padding: 4em 1em 0;
+    }
 }
 
 .main-text__text {
@@ -74,7 +90,7 @@
 }
 
 .media {
-    margin-top: 3em;
+    margin-top: 4em;
 }
 
 .media__headline {
@@ -84,7 +100,7 @@
     color: #fff;
     font-family: $headline-font;
     font-weight: 700;
-    margin-bottom: .5em;
+    margin-bottom: .6em;
 }
 
 .media--image {
@@ -97,7 +113,29 @@
         height: auto;
         padding-bottom: 2em;
     }
-    .media__caption {
-        font-family: $text-font;
+}
+
+.media__caption {
+    font-family: $text-font;
+}
+
+.media--logos {
+    display: flex;
+    flex-direction: column;
+}
+
+.media__download {
+    margin: 0 auto;
+    font-family: $headline-font;
+    color: $white;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+    margin-top: 1em;
+    &:hover,
+    &:active,
+    &:visited {
+        color: $white;
     }
 }
