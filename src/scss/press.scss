@@ -12,6 +12,10 @@
     }
 }
 
+.press--media {
+    background-color: $blue;
+}
+
 .press__facts {
     @media only screen and (min-width: $breakpoint-web) {
         width: 30%;
@@ -104,12 +108,11 @@
 
 .media__headline {
     width: 100%;
-    font-size: 3.5em;
+    font-size: 5.5em;
     text-align: center;
     color: #fff;
     font-family: $headline-font;
     font-weight: 700;
-    margin-bottom: .6em;
 }
 
 .media--image {
@@ -127,8 +130,19 @@
     }
 }
 
+.media__wrapper {
+    padding-top: 5em;
+}
+
 .media__caption {
+    padding-top: .5em;
     font-family: $text-font;
+}
+
+.media--videos {
+    & .media__caption {
+        margin-bottom: 2em;
+    }
 }
 
 .media--logos {
@@ -144,7 +158,6 @@
     text-align: center;
     width: 100%;
     text-decoration: underline;
-    margin-top: 1em;
     &:hover,
     &:active,
     &:visited {
