@@ -131,7 +131,7 @@
 }
 
 .media__wrapper {
-    padding-top: 5em;
+    padding-top: 2em;
 }
 
 .media__caption {
@@ -146,8 +146,17 @@
 }
 
 .media--logos {
+    .media__wrapper {
+        width: 49%;
+    }
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    img {
+        height: auto;
+    }
 }
 
 .media__download {
